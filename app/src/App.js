@@ -1,7 +1,18 @@
+import React from 'react';
+
 import './App.css';
 
 function App() {
   return (
+    const LoginUser= async (e)=>{
+      const res=await fetch('/https://dummyjson.com/auth/login',{
+        method:"POST", headers:{
+          "Content-Type":"application/json" },
+          body:JSON.stringify({ username, password }) }); const data=res.json();
+          if(!username){ alert("Invalid Username or Password");
+          localStorage.setItem('itemName', data.users.users.token) }
+    else{ alert("submitted"); }}
+    
     <div className="App">
       <h1>
         Welcome to login page!
